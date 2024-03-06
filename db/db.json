@@ -1,21 +1,12 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
+        "title": "This is a test",
+        "text": "testing notes",
+        "id": "6b631afe-fb18-46d7-b51c-f20745d1f55b"
     },
     {
-        "title": "testing ",
-        "text": "test",
-        "note_id": "15b1d331-8fbc-45bc-8283-0bae39f83377"
-    },
-    {
-        "title": "test",
-        "text": "test",
-        "note_id": "e9d62f32-52ac-41a8-9943-4e2d32964748"
-    },
-    {
-        "title": "test",
-        "text": "testomg",
-        "note_id": "2b7c7390-5e30-462e-baf1-6fdb53364a7f"
+        "title": "do laundry",
+        "text": "around 10am\n",
+        "id": "3389edee-cc92-4ca9-90a8-50d141a2a9e7"
     }
 ]
