@@ -1,2 +1,2 @@
-# NoteTaker
-Allows user to quickly add and save notes.
+# Note-Taker
+Application that allows a user to write and save notes quickly.
