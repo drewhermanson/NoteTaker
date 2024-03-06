@@ -12,15 +12,16 @@ notes.get('/', (req, res) => {
 
 //POST request to recieve notes and give them a unique id
 notes.post('/', (req, res) => {
+    //deconstruct from request body
     const { title, text } = req.body;
-  
+    //make note object and give it unique id using uuid
     if (title && text) {
       const newNote = {
         title,
         text,
         id: uuidv4(),
       };
-  
+      //appends new note to db
       readAndAppend(newNote, './db/db.json');
       res.json('Note added');
     } 
@@ -58,5 +59,5 @@ notes.delete('/:id', (req, res) => {
       res.status(500).json('Error deleting note');
     });
 });
-
+//export statement for modularization
 module.exports = notes;
