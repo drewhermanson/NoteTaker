@@ -24,7 +24,7 @@ if you want to delete a note then click the trash can icon next to the previous 
 
 The following video demonstrates an example user recording and deleting notes.
 
-![example demo](assets/example.gif)
+![example demo](Assets/example.gif)
 
 ## License
 This project is licensed under the MIT license.
