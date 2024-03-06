@@ -27,15 +27,15 @@ notes.post('/', (req, res) => {
 });
 
 //DELETE request that removes an entry from the db.json file based on its unique note id
-notes.delete('/:note_id', (req, res) => {
+notes.delete('/:id', (req, res) => {
   //creates a variable and assigns it the note id from the request parameters
-  const noteId = req.params.note_id;
+  const noteId = req.params.id;
   //reads from the database file
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
       //result is populated by using the filter method to check the db.json and return only values that don't match the noteId. 
-      const result = json.filter((note) => note.note_id !== noteId);
+      const result = json.filter((note) => note.id !== noteId);
 
       return result;
     })
